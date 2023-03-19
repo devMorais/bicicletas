@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <title>Bikecenter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Login Modal   -->
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-warning box-shadow">Entrar na Conta</button>
+            <small class="form-text text-muted">Esqueceu a senha? <a class="text-dark" href="#">Clique aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Login Modal  -->
+
+
+
+
+
+  <!-- TOPO -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+    <a href="index.html" class="navbar-brand">
+      <img src="img/Bikecenter.svg" alt="Caravan">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse lead" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria- expanded="false">Bicicletas</a>
+          <div class="dropdown-menu" aria- labelledby="navbarDropdown">
+            <a class="dropdown-item" href="bicicletas.html">Nimbus Stark</a>
+            <a class="dropdown-item" href="bicicletas.html">Magic Might</a>
+            <a class="dropdown-item" href="bicicletas.html">Nebula Cosmic</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="planos.html">Planos de seguro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-warning ml-md-2 text-dark box-shadow">
+
+            <strong class="lead text-dark">CADASTRO</strong></a>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- FIM TOPO -->
+  
+<section class="container-fluid">
+    <div class="row bg-dark text-white">
+      <div class="col-lg-7 p-0">
+        <div id="carouselBicicletas" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselBicicletas" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselBicicletas" data-slide-to="1"></li>
+            <li data-target="#carouselBicicletas" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/magic.jpg" alt="California">
+              <div class="carousel-caption">
+                <h3 class="display-4">Magic Might</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/nebula.jpg" alt="California">
+              <div class="carousel-caption">
+                <h3 class="display-4">Nebula Cosmic</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/nimbus.jpg" alt="California">
+              <div class="carousel-caption">
+                <h3 class="display-4">Nebula Cosmic</h3>
+              </div>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" href="#carouselBicicletas" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselBicicletas" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 p-5 align-self-center">
+
+        <h1 class="display-4">Bicicletas feitas sob medida<strong class="text-warning">.</strong></h1>
+        <p class="lead">Desperte o seu espírito de competição com nossas bicicletas de alta performance, e explore o mundo na sua velocidade com a Bike Center.</p>
+        <li class="nav-item tirar-ponto">
+          <a class="btn btn-warning ml-md-2 text-dark box-shadow" href="#"><strong class="lead text-dark">ESCOLHA A SUA</strong></a>
+        </li>
+
+      </div>
+    </div>
+
+</section>
+<!-- FIM INTRODUCAO CAROUSEL DE BIKES ESCOLHA A SUA -->
+
+
+  <!--INTRODUCAO SEGUROS-->
+s<section class="py-5 bg-light text-center">
+    <div class="container">
+      <div class="my-5">
+        <span class="h5 d-block">ESCOLHA O SEGURO</span>
+        <h2 class="display-3">você seguro<strong class="text-warning">.</strong></h2>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-4">
+
+          <div style="height: 100px;" class="icone d-flex justify-content-center">
+            <img src="img/icones/ouro.png" alt="Ouro">
+          </div>
+
+          <h3 class="display-6">OURO</h3>
+          <p>O seguro OURO para bicicletas é a escolha ideal para quem quer pedalar com segurança e tranquilidade. Com sua cobertura abrangente, assistência 24 horas, indenização rápida, opções personalizadas e preços competitivos, este seguro oferece a melhor proteção para sua bicicleta.</p>
+        </div>
+
+        <div class="col-lg-4">
+
+          <div style="height: 100px;" class="icone d-flex justify-content-center">
+            <img src="img/icones/prata.png" alt="Ouro">
+          </div>
+          <h3 class="display-6">PRATA</h3>
+          <p>O seguro PRATA para bicicletas é uma opção confiável e acessível para proteger sua bicicleta. Com sua cobertura confiável, assistência em caso de emergência, indenização justa, flexibilidade de cobertura e preços acessíveis, este seguro oferece a proteção necessária para a sua bicicleta sem comprometer seu orçamento.</p>
+</div>
+
+<div class="col-lg-4">
+
+          <div style="height: 100px;" class="icone d-flex justify-content-center">
+            <img src="img/icones/bronze.png" alt="Ouro">
+          </div>
+          <h3 class="display-6">BRONZE</h3>
+          <p> o seguro "bronze" para bicicletas é uma opção econômica e confiável para proteger sua bicicleta contra roubo, furto e danos acidentais. Com sua cobertura básica, assistência básica, indenização acessível, simplicidade e preços extremamente acessíveis.</p>
+</div>
+</div>
+<a href="cadastro.html" class="btn btn-warning btn-lg lead my-5 box-shadow">ESCOLHER SEGURO</a>
+</div>
+</section>
+
+  <!--FIM INTRODUCAO SEGUROS-->
+  <!-- DEPOIMENTOS  -->
+
+<section id="bg-depoimento" class="p-md-5">
+
+    <blockquote class="blockquote text-center text-white p-md-5 p-3">
+      <p class="display-4 p-md-3"><em>"Pedalar sempre foi a minha paixão, o que o pessoal da Bikecenter fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo."</em></p>
+      <footer class="blockquote-footer text-white">Ana Júlia</footer>
+    </blockquote>
+</section>
+
+ 
+   <!--FIM DEPOIMENTOS-->
+
+  <!-- PERGUNTAS FREQUENTES  -->
+
+  <section class="container">
+
+    <div class="my-5 text-center">
+      <span class="h5 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+      <h2 class="display-3">perguntas frequentes<strong class="text-warning">.</strong></h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6" id="perguntasFrequentes" data-children=".pergunta">
+
+        <div class="pergunta py-3">
+          <a class="h5 text-dark" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">
+            <strong class="text-warning">➜</strong> Qual forma de pagamento vocês aceitam?</a>
+
+          <div id="pergunta1" class="collapse show" role="tabpanel">
+            <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+          </div>
+        </div>
+
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-3">
+          <a class="h5 text-dark" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta2" aria-expanded="true" aria-controls="pergunta2">
+            <strong class="text-warning">➜</strong> Como posso entrar em contato?</a>
+
+          <div id="pergunta2" class="collapse" role="tabpanel">
+            <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+          </div>
+        </div>
+
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-3">
+          <a class="h5 text-dark" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta3" aria-expanded="true" aria-controls="pergunta3">
+            <strong class="text-warning">➜</strong> Vocês possuem algum desconto?</a>
+
+          <div id="pergunta3" class="collapse" role="tabpanel">
+            <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+          </div>
+        </div>
+
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-3">
+          <a class="h5 text-dark" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta4" aria-expanded="true" aria-controls="pergunta4">
+            <strong class="text-warning">➜</strong> Qual a garantia que possuo?</a>
+
+          <div id="pergunta4" class="collapse" role="tabpanel">
+            <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+          </div>
+        </div>
+
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-3">
+          <a class="h5 text-dark" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta5" aria-expanded="true" aria-controls="pergunta5">
+            <strong class="text-warning">➜</strong> Posso parcelar no boleto?</a>
+
+          <div id="pergunta5" class="collapse" role="tabpanel">
+            <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-3">
+          <a class="h5 text-dark" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta6" aria-expanded="true" aria-controls="pergunta6">
+            <strong class="text-warning">➜</strong> Quantas trocas posso fazer ao ano?</a>
+
+          <div id="pergunta6" class="collapse" role="tabpanel">
+            <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+
+      </div>
+    </div>
+
+    <div class="text-center my-5">
+      <p class="lead m-3">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+
+      <a class="btn btn-warning btn-lg lead box-shadow" href="contato.html">ENTRE EM CONTATO</a>
+    </div>
+  </section>
+  <!-- FIM PERGUNTAS FREQUENTES  -->
+
+
+  <!-- RODAPÉ  -->
+  <footer class="bg-dark text-white py-5">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 my-4 icone d-flex justify-content-center col-12">
+          <a href="index.html" class="navbar-brand">
+            <img src="img/Bikecenter-footer.svg" alt="Bikecenter">
+          </a>
+
+
+
+        </div>
+
+        <div class="col-md-3 col-6">
+
+          <h4 class="h5">CONTATO</h4>
+          <p class="my-2 lead">+55 21 9999-9999</p>
+          <p class="my-2 lead">contato@bikcraft.com</p>
+
+          <p class="my-2 lead">Rua Ali Perto, 42 - Botafogo</p>
+          <p class="my-2 lead">Rio de Janeiro - RJ</p>
+
+        </div>
+
+        <div class="col-md-3 col-6">
+
+          <h4 class="h5">INFORMAÇÕES</h4>
+
+          <ul class="list-unstyled text-white">
+
+            <li class="my-2 lead"><a class="text-white" href="#">Bicicletas</a></li>
+            <li class="my-2 lead"><a class="text-white" href="#">Seguros</a></li>
+
+
+            <li class="my-2 lead"><a class="text-white" href="#">Contato</a></li>
+            <li class="my-2 lead"><a class="text-white" href="bicicletas.html">Termos e condições</a></li>
+
+          </ul>
+
+        </div>
+        <div class="col-md-3 mt-2 col-6">
+          <h4 class="h5">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li class="my-2 lead"><a class="btn btn-outline-secondary btn-sm btn-block mb-3" href="#" style="max-width: 140px">FACEBOOK</a></li>
+            <li class="my-2 lead"><a class="btn btn-outline-secondary btn-sm btn-block mb-3" href="#" style="max-width: 140px">INSTAGRAM</a></li>
+            <li class="my-2 lead"><a class="btn btn-outline-secondary btn-sm btn-block mb-3" href="#" style="max-width: 140px">YOUTUBE</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-warning text-center py-3">
+      <p class="mb-0 lead text-dark">
+        Bikecenter © 2023 Alguns direitos reservados.
+      </p>
+    </div>
+  </footer>
+  <!-- FIM RODAPÉ  -->
+
+  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+
+</body>
+
+</html>
